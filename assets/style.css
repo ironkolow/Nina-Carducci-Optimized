@@ -101,7 +101,7 @@ body {
 	justify-content: center;
 }
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
-	color: #fff;
+	color: #000;
 	background-color: #BEB45A;
 	border-radius:0 ;
 }
@@ -255,7 +255,7 @@ input[type="submit"] {
 		margin-top: 0;
 		margin-bottom: 1em;
 	}
-	#about-me h6, #about-me p {
+	#about-me .about-me__introduction, #about-me p {
 		width: 100%;
 	}
 }
@@ -360,3 +360,21 @@ input[type="submit"] {
 .picture img {
 	height: auto;
 }
+
+/* headings changed to keep a valid heading order: preserve the look */
+.quote__text {
+	font-size: calc(1.375rem + 1.5vw);
+	line-height: 1.2;
+	margin-bottom: 0.5rem;
+}
+@media (min-width: 1200px) {
+	.quote__text { font-size: 2.5rem; }
+}
+.about-me__introduction {
+	font-size: 1rem;
+	margin-bottom: 1rem;
+}
+.top-header .name {
+	margin-bottom: 0;
+}
+.nav-pills .nav-link { cursor: pointer; }
