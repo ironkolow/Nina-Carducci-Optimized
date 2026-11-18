@@ -354,3 +354,9 @@ input[type="submit"] {
 	}
 }
 
+
+/* keep image ratio now that width/height attributes are set */
+.carousel-item img,
+.picture img {
+	height: auto;
+}
