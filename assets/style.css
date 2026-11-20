@@ -378,3 +378,9 @@ input[type="submit"] {
 	margin-bottom: 0;
 }
 .nav-pills .nav-link { cursor: pointer; }
+
+/* hidden carousel labels: dark text so contrast checkers (WAVE) do not flag white on white */
+.carousel-control-prev .visually-hidden,
+.carousel-control-next .visually-hidden {
+	color: #000;
+}
